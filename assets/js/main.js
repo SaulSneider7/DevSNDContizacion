@@ -1,4 +1,8 @@
-let cotizar = document.getElementById('cotizar');
-cotizar.addEventListener('click', () => {
-    console.log('click');
+let formulario = document.getElementById('form');
+formulario.addEventListener('submit', (e) => {
+    Swal.fire({
+        title: "Formulario Enviado",
+        text: "El formulario se ha enviado correctamente.",
+        icon: "success",
+    })
 })
