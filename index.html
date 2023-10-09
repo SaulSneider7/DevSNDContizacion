@@ -45,10 +45,10 @@
                 <input type="hidden" name="_subject" value="¡Cotizavion del sitio web!" >
                 <input type="hidden" name="_cc" value="saulsneiderwork@outlook.com">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://devsaulsneider.github.io/page_VGR/">
+                <input type="hidden" name="_next" value="https://saulsneider7.github.io/DevSNDContizacion">
                 <div>
                     <label for="">¿Cu&aacute;l es el nombre de tu empresa o proyecto?</label>
-                    <input class="form__input" id="nombre_empresa" name="nombre_empresa" type="text">
+                    <input class="form__input" id="nombre_empresa" name="nombre_empresa" type="text" required>
                     <p class="form__example">Ejemplo: Mi empresa se llama "TEST Solutions" </p>
                 </div>
 
@@ -62,7 +62,7 @@
                 <div>
                     <label for="">¿Qui&eacute;nes son tus principales competidores y c&oacute;mo te diferencias de
                         ellos?</label>
-                    <textarea class="form__textarea" name="competidores" id="competidores" rows="5"></textarea>
+                    <textarea class="form__textarea" name="competidores" id="competidores" rows="5"></textarea required>
                     <p class="form__example">Ejemplo: Nuestros principales competidores son: "ABC Studio", "DEMO Web" y
                         "XYZ Consulting. Nos diferenciamos porque ofrecemos servicios personalizados."</p>
                 </div>
@@ -70,7 +70,7 @@
                 <div>
                     <label for="">¿Dispone de contenido (textos, imágenes, videos, etc.) para su sitio web, o requiere
                         la creación de nuevo contenido?</label>
-                    <input class="form__input" name="contenidos" id="contenido" type="text">
+                    <input class="form__input" name="contenidos" id="contenido" type="text" required>
                     <p class="form__example">Ejemplo: Contamos con imagenes pero necesitamos ayuda para generar nuevo
                         contenido</p>
                 </div>
@@ -78,13 +78,13 @@
                 <div>
                     <label for="">¿Ya cuenta con elementos de identidad de marca, como el logo, colores y
                         tipograf&iacute;a?</label>
-                    <input class="form__input" id="identidad" name="branding" type="text">
+                    <input class="form__input" id="identidad" name="branding" type="text" required>
                 </div>
 
                 <div>
                     <label for="">¿Necesita alguna funci&oacute;n espec&iacute;fica en su sitio web, como formularios o
-                        integraci&oacute;n con redes sociales?</label>
-                    <textarea class="form__textarea" name="componentes" id="componentes" rows="5"></textarea>
+                        integraci&oacute;n con redes sociales, Whatsapp, etc?</label>
+                    <textarea class="form__textarea" name="componentes" id="componentes" rows="5"></textarea required>
                     <p class="form__example">Ejemplo: S&iacute;, necesitamos un formulario para que se puedan comunicar
                         con nosotros, un boton para whatsapp y la intregacion hacia nuestras redes sociales</p>
                 </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div>
                     <label for="">¿Cu&aacute;l es el presupuesto que ha asignado para este proyecto?</label>
-                    <input class="form__input" type="number" name="presupuesto" id="presupuesto">
+                    <input class="form__input" type="number" name="presupuesto" id="presupuesto" required>
                     <p class="form__example">Coloque un estimado de lo que puedes invertir para tu sitio web</p>
                 </div>
                 <div class="form__cliente">
@@ -122,7 +122,7 @@
                         <input class="form__input__cliente" type="email" name="Email" id="email"
                             placeholder="miempresa@gmail.com">
 
-                        <button class="form__btn" type="submit"><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;
+                        <button id="cotizar" class="form__btn" type="submit"><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;
                             Cotizar Sitio Web</button>
                     </div>
                 </div>
