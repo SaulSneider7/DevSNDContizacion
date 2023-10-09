@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Cotizavion | Pagina Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/logo.png" alt="Logo DevSND">
+        </div>
+        <div class="header__text">
+            <p class="header__text__body">Construimos Tu</p>
+            <p class="header__text__title">Exito Digital</p>
+        </div>
+    </header>
+    <main>
+        <div class="btn_whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=925640292" target="_blank">
+                <i class="fa-brands fa-whatsapp ico"></i>&nbsp;&nbsp; Asesoria Gratuita</a>
+        </div>
+        <section class="titles">
+            <p class="titles__text">Formulario para</p>
+            <h1 class="titles__title">Creaci&oacute;n de P&aacute;gina web</h1>
+        </section>
+        <section class="text-info">
+            <p class="text-info__text">¡Estamos emocionados por ser parte de tu éxito en l&iacute;nea! Comparte tu
+                visi&oacute;n con nosotros para que podamos crear la soluci&oacute;n perfecta. Cada detalle cuenta y nos
+                ayuda a dar vida a tu proyecto. Imagina lo que podemos lograr juntos. Completa el formulario y déjanos
+                ser tu socio en este emocionante viaje hacia el éxito digital. ¡Tu &eacute;xito es nuestra pasi&oacute;n
+                y estamos ansiosos por empezar!
+            </p>
+        </section>
+        <section class="formulario mt-3">
+            <form action="https://formsubmit.co/saulsneiderwork@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="¡Cotizavion del sitio web!" >
+                <input type="hidden" name="_cc" value="saulsneiderwork@outlook.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://devsaulsneider.github.io/page_VGR/">
+                <div>
+                    <label for="">¿Cu&aacute;l es el nombre de tu empresa o proyecto?</label>
+                    <input class="form__input" id="nombre_empresa" name="nombre_empresa" type="text">
+                    <p class="form__example">Ejemplo: Mi empresa se llama "TEST Solutions" </p>
+                </div>
+
+                <div>
+                    <label for="">¿Cu&aacute;l es su publico objetivo?</label>
+                    <textarea class="form__textarea" name="publico_objetivo" id="publico_obj" rows="5"></textarea>
+                    <p class="form__example">Ejemplo: Nuestro p&uacute;blico objetivo son empresas que desarrollan
+                        soluciones digitales</p>
+                </div>
+
+                <div>
+                    <label for="">¿Qui&eacute;nes son tus principales competidores y c&oacute;mo te diferencias de
+                        ellos?</label>
+                    <textarea class="form__textarea" name="competidores" id="competidores" rows="5"></textarea>
+                    <p class="form__example">Ejemplo: Nuestros principales competidores son: "ABC Studio", "DEMO Web" y
+                        "XYZ Consulting. Nos diferenciamos porque ofrecemos servicios personalizados."</p>
+                </div>
+
+                <div>
+                    <label for="">¿Dispone de contenido (textos, imágenes, videos, etc.) para su sitio web, o requiere
+                        la creación de nuevo contenido?</label>
+                    <input class="form__input" name="contenidos" id="contenido" type="text">
+                    <p class="form__example">Ejemplo: Contamos con imagenes pero necesitamos ayuda para generar nuevo
+                        contenido</p>
+                </div>
+
+                <div>
+                    <label for="">¿Ya cuenta con elementos de identidad de marca, como el logo, colores y
+                        tipograf&iacute;a?</label>
+                    <input class="form__input" id="identidad" name="branding" type="text">
+                </div>
+
+                <div>
+                    <label for="">¿Necesita alguna funci&oacute;n espec&iacute;fica en su sitio web, como formularios o
+                        integraci&oacute;n con redes sociales?</label>
+                    <textarea class="form__textarea" name="componentes" id="componentes" rows="5"></textarea>
+                    <p class="form__example">Ejemplo: S&iacute;, necesitamos un formulario para que se puedan comunicar
+                        con nosotros, un boton para whatsapp y la intregacion hacia nuestras redes sociales</p>
+                </div>
+
+                <div>
+                    <label for="">¿Ya tiene un dominio y servicio de alojamiento web (hosting y dominio)?</label>
+                    <select class="form__input" name="Dominio_Hosting" id="HostAndDom">
+                        <option value="Dominio">Solo tengo Dominio</option>
+                        <option value="Hosting">Solo tengo Hosting</option>
+                        <option value="Hosting y Dominio">Tengo Ambos</option>
+                        <option value="Ninguno" selected>No tengo ninguno</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">¿Cu&aacute;l es el presupuesto que ha asignado para este proyecto?</label>
+                    <input class="form__input" type="number" name="presupuesto" id="presupuesto">
+                    <p class="form__example">Coloque un estimado de lo que puedes invertir para tu sitio web</p>
+                </div>
+                <div class="form__cliente">
+                    <div>
+                        <p class="form__title">Estas por terminar el formulario</p>
+                        <p class="form__text">Necesitamos tus datos para contactarte</p>
+                    </div>
+                    <div>
+                        <label for="nombreCliente">Nombre y Apellidos:</label>
+                        <input class="form__input__cliente" name="Nombre_Cliente" id="nombreCliente" type="text">
+                    </div>
+                    <div>
+                        <label for="numWhatsapp">N&uacute;mero de Whatsapp:</label>
+                        <input class="form__input__cliente" name="Whatsapp" type="text" name="" id="numWhatsapp"
+                            placeholder="+51 999 999 999">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input class="form__input__cliente" type="email" name="Email" id="email"
+                            placeholder="miempresa@gmail.com">
+
+                        <button class="form__btn" type="submit"><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;
+                            Cotizar Sitio Web</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <div class="pie-pagina__grupo1">
+            <div class="pie-pagina__grupo1__box">
+                <figure>
+                    <a href="#">
+                        <img loading="lazy" src="img/logo.png" alt="logo de VGR">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="pie-pagina__grupo1__box">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos más que creadores de páginas web; somos artesanos digitales que transforman visiones en realidades en línea.</p>
+                <p>Nos enorgullece ser los maestros de la personalización, diseñando sitios web a medida que son una extensión perfecta de tu negocio y tu marca.</p>
+            </div>
+
+        </div>
+
+        <div class="pie-pagina__grupo2">
+            <small>&copy; 2023 <b>Corporacion DevSND</b> - Todos los derechos reservados</small> |
+            <small>Designed by <a href="#">SaulSneider</a></small>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

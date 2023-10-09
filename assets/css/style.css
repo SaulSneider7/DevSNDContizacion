@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.btn_whatsapp {
+    background-color: #25D366;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    padding: 0.5em 2em;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.ico{
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 0;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__text {
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header__text__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.titles {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.titles__text {
+    font-size: 1.3em;
+}
+
+.titles__title {
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.text-info__text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: justify;
+    color: #5e5c5c;
+}
+
+/* .formulario{
+    border: 1px solid #5e5c5c;
+} */
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    font-size: 16px;
+}
+
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #5e5c5c;
+}
+
+.form__example {
+    color: #5e5c5c;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.form__title {
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 0.3em;
+}
+
+.form__text {
+    font-size: 0.9em;
+}
+
+.form__cliente {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form__input__cliente {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #5e5c5c;
+}
+
+.form__btn {
+    margin-top: 1em;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border: 1px solid #5e5c5c;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s all ease;
+}
+
+.form__btn:hover {
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.form__btn:active {
+    scale: 0.9;
+}
+
+
+footer{
+    margin-top: 3em;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .pie-pagina__grupo1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 35px 0px;
+}
+
+.pie-pagina .pie-pagina__grupo1 .pie-pagina__grupo1__box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .pie-pagina__grupo1 .pie-pagina__grupo1__box figure img {
+    width: 250px;
+}
+
+.pie-pagina .pie-pagina__grupo1 .pie-pagina__grupo1__box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.pie-pagina .pie-pagina__grupo1 .pie-pagina__grupo1__box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+
+.pie-pagina .pie-pagina__grupo1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.pie-pagina .pie-pagina__grupo2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+    padding-bottom: 5em;
+}
