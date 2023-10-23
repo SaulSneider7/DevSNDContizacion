@@ -24,7 +24,7 @@ document.getElementById('form')
                 btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp; Cotizar Sitio Web`;
                 Swal.fire({
                     title: "Formulario Enviado",
-                    text: "El formulario se ha enviado correctamente.",
+                    text: "Nos comunicaremos en breve para enviarle una cotización.",
                     icon: "success",
                 })
             }, (err) => {
