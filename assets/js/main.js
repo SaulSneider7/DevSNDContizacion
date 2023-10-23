@@ -1,11 +1,6 @@
 console.log('%c¡Atención! %c', 'font-size: 24px; color: yellow; background-color: red;', 'font-size: 20px;');
 console.log('%cEsta es una zona de desarrollo. No puedes ingresar a este apartado del sitio web.', 'font-size: 20px;');
 
-let formulario = document.getElementById('form');
-formulario.addEventListener('submit', (e) => {
-    
-})
-
 // EMAIL JS
 
 const btn = document.getElementById('cotizar');
@@ -27,6 +22,7 @@ document.getElementById('form')
                     text: "Nos comunicaremos en breve para enviarle una cotización.",
                     icon: "success",
                 })
+                location.reload();
             }, (err) => {
                 alert(JSON.stringify(err));
             });
