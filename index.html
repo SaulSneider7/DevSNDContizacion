@@ -41,11 +41,8 @@
             </p>
         </section>
         <section class="formulario mt-3">
-            <form action="https://formsubmit.co/saulsneiderwork@gmail.com" method="POST" id="form">
-                <input type="hidden" name="_subject" value="¡Cotizavion del sitio web!" >
-                <input type="hidden" name="_cc" value="saulsneiderwork@outlook.com">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://saulsneider7.github.io/DevSNDContizacion">
+            <form method="POST" id="form">
+
                 <div>
                     <label for="nombre_empresa">¿Cu&aacute;l es el nombre de tu empresa o proyecto?</label>
                     <input class="form__input" id="nombre_empresa" name="nombre_empresa" type="text" required>
@@ -54,13 +51,14 @@
 
                 <div>
                     <label for="publico_obj">¿Cu&aacute;l es su publico objetivo?</label>
-                    <textarea class="form__textarea" name="publico_objetivo" id="publico_obj" rows="5"></textarea>
+                    <textarea class="form__textarea" name="publico_obj" id="publico_obj" rows="5"></textarea>
                     <p class="form__example">Ejemplo: Nuestro p&uacute;blico objetivo son empresas que desarrollan
                         soluciones digitales</p>
                 </div>
 
                 <div>
-                    <label for="competidores">¿Qui&eacute;nes son tus principales competidores y c&oacute;mo te diferencias de
+                    <label for="competidores">¿Qui&eacute;nes son tus principales competidores y c&oacute;mo te
+                        diferencias de
                         ellos?</label>
                     <textarea class="form__textarea" name="competidores" id="competidores" rows="5"></textarea required>
                     <p class="form__example">Ejemplo: Nuestros principales competidores son: "ABC Studio", "DEMO Web" y
@@ -70,7 +68,7 @@
                 <div>
                     <label for="contenido">¿Dispone de contenido (textos, imágenes, videos, etc.) para su sitio web, o requiere
                         la creación de nuevo contenido?</label>
-                    <input class="form__input" name="contenidos" id="contenido" type="text" required>
+                    <input class="form__input" name="contenido" id="contenido" type="text" required>
                     <p class="form__example">Ejemplo: Contamos con imagenes pero necesitamos ayuda para generar nuevo
                         contenido</p>
                 </div>
@@ -78,7 +76,7 @@
                 <div>
                     <label for="identidad">¿Ya cuenta con elementos de identidad de marca, como el logo, colores y
                         tipograf&iacute;a?</label>
-                    <input class="form__input" id="identidad" name="branding" type="text" required>
+                    <input class="form__input" id="identidad" name="identidad" type="text" required>
                 </div>
 
                 <div>
@@ -91,7 +89,7 @@
 
                 <div>
                     <label for="HostAndDom">¿Ya tiene un dominio y servicio de alojamiento web (hosting y dominio)?</label>
-                    <select class="form__input" name="Dominio_Hosting" id="HostAndDom">
+                    <select class="form__input" name="HostAndDom" id="HostAndDom">
                         <option value="Dominio">Solo tengo Dominio</option>
                         <option value="Hosting">Solo tengo Hosting</option>
                         <option value="Hosting y Dominio">Tengo Ambos</option>
@@ -110,20 +108,22 @@
                     </div>
                     <div>
                         <label for="nombreCliente">Nombre y Apellidos:</label>
-                        <input class="form__input__cliente" name="Nombre_Cliente" id="nombreCliente" type="text" required>
+                        <input class="form__input__cliente" name="nombreCliente" id="nombreCliente" type="text" required>
                     </div>
                     <div>
                         <label for="numWhatsapp">N&uacute;mero de Whatsapp:</label>
-                        <input class="form__input__cliente" name="Whatsapp" type="text" name="" id="numWhatsapp"
+                        <input class="form__input__cliente" name="numWhatsapp" type="text" id="numWhatsapp"
                             placeholder="+51 999 999 999" required>
                     </div>
                     <div>
                         <label for="email">Email:</label>
-                        <input class="form__input__cliente" type="email" name="Email" id="email"
-                            placeholder="miempresa@gmail.com" required autocomplete="email">>
+                        <input class="form__input__cliente" type="email" name="email" id="email"
+                            placeholder="miempresa@gmail.com" required autocomplete="email">
 
-                        <button id="cotizar" class="form__btn" type="submit"><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;
-                            Cotizar Sitio Web</button>
+                        <button id="cotizar" class="form__btn" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;
+                            Cotizar Sitio Web
+                        </button>
                     </div>
                 </div>
             </form>
@@ -152,6 +152,12 @@
             <small>Designed by <a href="#">SaulSneider</a></small>
         </div>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('TaSgoTCYRuHXv-lz-')
+    </script>
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/main.js?v=1"></script>
 </body>
