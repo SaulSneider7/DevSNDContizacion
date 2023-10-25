@@ -18,7 +18,7 @@ document.getElementById('form')
             .then(() => {
                 btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp; Cotizar Sitio Web`;
                 let presupuesto = document.getElementById('presupuesto');
-                if (presupuesto.value < 300) {
+                if (presupuesto.value <= 300) {
                     location.href = 'gracias.html';
                 } else {
                     Swal.fire({
