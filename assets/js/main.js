@@ -17,8 +17,8 @@ document.getElementById('form')
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp; Cotizar Sitio Web`;
-                let presupuesto = document.getElementById('presupuesto');
-                if (presupuesto.value <= 300) {
+                let presupuesto = parseFloat(document.getElementById('presupuesto').value);
+                if (presupuesto <= 300) {
                     location.href = 'gracias.html';
                 } else {
                     Swal.fire({
