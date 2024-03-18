@@ -18,17 +18,24 @@ document.getElementById('form')
             .then(() => {
                 btn.innerHTML = `<i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp; Cotizar Sitio Web`;
                 let presupuesto = parseFloat(document.getElementById('presupuesto').value);
-                if (presupuesto > 299) {
-                    Swal.fire({
-                        title: "Formulario Enviado",
-                        text: "Nos comunicaremos en breve para enviarle una cotización.",
-                        icon: "success",
-                    }).then(() => {
-                        location.reload();
-                    })
-                } else {
-                    location.href = 'gracias.html';
-                }
+                Swal.fire({
+                    title: "Formulario Enviado",
+                    text: "Nos comunicaremos en breve para enviarle una cotización.",
+                    icon: "success",
+                }).then(() => {
+                    location.reload();
+                })
+                // if (presupuesto > 299) {
+                //     Swal.fire({
+                //         title: "Formulario Enviado",
+                //         text: "Nos comunicaremos en breve para enviarle una cotización.",
+                //         icon: "success",
+                //     }).then(() => {
+                //         location.reload();
+                //     })
+                // } else {
+                //     location.href = 'gracias.html';
+                // }
             }, (err) => {
                 alert(JSON.stringify(err));
             });
